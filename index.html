@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
     <title>Login System</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container"><a href="teachers_login.php"></div><input type="button" value="Teacher's Login" class="btn" style="background-color: #09fd09f3;  box-shadow: 15px 15px 25px #a8a8a8;
-        transition: box-shadow 0.5s;"></a>
+    <div class="container"><a href="teachers_login.php"></div>
+        <input type="button" value="Teacher's Login" class="btn" style="background-color: #cfd2df;  box-shadow: 15px 15px 25px #a8a8a8;
+        transition: box-shadow 2.0s;"></a>
     </div>
     <section class="left-section">
         <div id="left-cover" class="cover cover-hide">
@@ -17,7 +22,7 @@
             <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
         </div>
         <div id="left-form" class="form fade-in-element">
-            <h1 class="l">Login</h1>
+            <h1 class="l">Student's Login<span></span></h1>
             <form action="login.php" method="post">
                 <input type="text" name="user-name" class="input-box" placeholder="User Name" required>
                 <input type="password" name="user-pass" class="input-box" placeholder="Password" required>
