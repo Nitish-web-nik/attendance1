@@ -1,12 +1,20 @@
 * {
+    padding: 0;
+	margin: 0;
     box-sizing: border-box;
 }
-
+html {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI';
-    font-size: 25px;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    font-size: 100px;
     animation: mymove 30s infinite;
     background-position: top bottom;
 }
@@ -15,9 +23,9 @@ body {
 .form input {
     min-width: 400px;
     display: block;
-    margin: 20px;
+    margin: 30px;
     padding: 15px 20px;
-    background-color: #ece7e7;
+    background-color:#dbebf1;
     font-size: 20px;
     border: none;
     outline: none;
@@ -27,25 +35,25 @@ body {
 }
 
 .form input:focus {
-    box-shadow: 5px 5px 15px #a8a8a8;
+    box-shadow: 5px 5px 15px #52a1a7;
 }
 
 .form .btn {
     margin: auto;
     padding: 10px 35px;
-    background-color: #09fd09f3;
-    color: #fff;
+    background-color: #fff;
+    color: rgb(95, 61, 73);
     border: none;
     font-size: 22px;
     border-radius: 10px;
-    box-shadow: 15px 15px 25px #a8a8a8;
+    box-shadow: 15px 15px 25px #52a1a7;
     transition: box-shadow 0.5s;
     outline: none;
 }
 
 
 .form .btn:hover {
-    box-shadow: 5px 5px 15px #aaa;
+    box-shadow: 5px 5px 15px #270338;
     transform:translate(5px,-5px);
     animation:soliution 1s ease-in-out infinite alternate;
 }
@@ -74,12 +82,12 @@ body {
 }
 
 .cover .switch-btn {
-    position: absolute;
+    position: relative;
     bottom: 350px;
     font-size: 25px;
     margin: 40vh auto;
     padding: 10px 55px;
-    background-color: #e46e0d;
+    background-color: #5fa0e2f3;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -180,7 +188,7 @@ body {
  }
 
  .l{
-    background: linear-gradient(to top, rgb(12, 175, 86), #1ce909);
+    background: linear-gradient(to top,#09e9e9, #09e9e9);
     -webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
  }
@@ -258,8 +266,30 @@ body {
 .right-section .form-hide {
     visibility: hidden;
 }
+}
+
+/*--------------------------------CSS For Responsive Web  --------------------------------*/
 
 
+/* Tabled Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; }
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
 
-     
-     }
